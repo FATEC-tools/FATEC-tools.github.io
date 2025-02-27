@@ -17,17 +17,30 @@ main {
     align-items: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .flex-lado-a-lado {
     display: flex;
 }
 
-.form-cadastrar-ferramenta {
-    height: 100%;
-    width: 80%;
-    background: var(--vermelho-escuro);
+.cadastrar-ferramenta {
+    width: 85%;
+    height: 85%;
+    background: var(--gradiente-azul-forte);
     border-radius: 20px;
     padding: 25px;
     margin: 55px 0px;
+    ;
+}
+
+.form-cadastrar-ferramenta {
+    height: 100%;
+    width: 90%;
+    background: var(--vermelho-escuro);
+    border-radius: 20px;
+    padding: 55px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +63,9 @@ main {
         height: 300px;
         background-color: gray;
         border-radius: 20px;
+        margin-bottom: 10px;
     }
+
 }
 
 .btn-lado-a-lado {
@@ -63,13 +78,49 @@ main {
 
 .container-right {
     margin-left: 15px;
+
+    input,
+    select {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid transparent;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: .3s;
+
+        option {
+            background-color: brown;
+        }
+    }
+
+    select:focus,
+    select:active,
+    select:checked {
+        border-radius: 1px;
+
+    }
+
+    textarea {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid transparent;
+        border-radius: 10px;
+        resize: none;
+    }
 }
 
 .container-left-right {
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.btns-acoes {
+    margin-top: 50px;
+
+    .btn-vermelho {
+        padding: 10px;
+    }
 }

@@ -79,24 +79,8 @@ body {
     background-image: var(--gradiente-vermelho);
     width: 100vw;
     padding-top: 10%;
-}
 
-.flex-rodape {
-    display: flex;
-}
-
-.fim-site article {
-    margin: 0 3%;
-    padding: 1%;
-    width: 31vw;
-}
-
-#traco-branco {
-    border-right: solid 1px var(--branco-base);
-    height: 50vh;
-    align-self: center;
-}
-
+    
 form {
     width: 90%;
     background: var(--vermelho-escuro);
@@ -179,7 +163,23 @@ legend {
     color: var(--branco-base);
     font-size: 1.3em;
 }
+}
 
+.flex-rodape {
+    display: flex;
+}
+
+.fim-site article {
+    margin: 0 3%;
+    padding: 1%;
+    width: 31vw;
+}
+
+#traco-branco {
+    border-right: solid 1px var(--branco-base);
+    height: 50vh;
+    align-self: center;
+}
 
 /* coloquei esse display none pq tava aparecendo sem tar -768px 27/10 */
 .menu-toggle {

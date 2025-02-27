@@ -2,6 +2,7 @@
     --gradiente-base: linear-gradient(195deg, #2b3a72 0%, #040518 70%);
     --gradiente-alter: linear-gradient(180deg, #364b9b, #040518);
     --gradiente-azul-claro: linear-gradient(-90deg, #1c2957 10%, #2c4ab6 40%);
+    --gradiente-azul-forte: linear-gradient(-180deg, #204099 10%, #264cd4 40%);
 
     --gradiente-vermelho: linear-gradient(90deg, #840C15 10%, #BA2221 40%);
 

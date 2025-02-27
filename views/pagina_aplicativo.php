@@ -331,16 +331,13 @@
             <article class="passos-video">
                 <h2>Video que pode te ajudar</h2>
 
-                <a href="https://www.youtube.com/embed/NXgsXiu4LtA?si=jG50oH2U2UsTfvHf" target="_blank"><button
-                        class="btn-instalar">ir para o vídeo</button></a>
+                <iframe id="iframe" width="1280" height="720"
+                    src="https://www.youtube.com/embed/NXgsXiu4LtA?si=jG50oH2U2UsTfvHf" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <!--<div id="cor">
-                    <iframe width="1280" height="720"
-                        src="https://www.youtube.com/embed/NXgsXiu4LtA?si=jG50oH2U2UsTfvHf" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>-->
+
             </article>
         </section>
     </main>

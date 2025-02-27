@@ -40,13 +40,42 @@ main {
 .form-perfil {
     height: 85%;
     width: 70%;
-    background: var(--vermelho-escuro);
+    background: var(--gradiente-azul-forte);
     border-radius: 20px;
     padding: 25px;
     margin: 55px 0px;
+}
+
+/* AREA DE FOTO E DADOS DO PERFIL */
+.area-foto-dados {
+    gap: 50px;
+}
+.foto-perfil-nome {
+    width: 45%;
+
+    img {
+        background: gray;
+        border-radius: 200px;
+        height: 350px;
+        width: 350px;
+    }
+
+}
+
+.form-editar-perfil {
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 45%;
+
+    input {
+        height: 40px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid transparent;
+        border-radius: 10px;
+    }
+
 }
 
 .btn {
@@ -75,18 +104,11 @@ main {
     border-radius: 2px;
 }
 
-.container-acoes{
+.container-acoes {
     height: 15%;
     width: 70%;
     background: var(--vermelho-escuro);
     border-radius: 20px;
     padding: 25px;
     margin: 55px 0px;
-}
-
-input[type="password"],
-textarea {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 2px solid transparent;
-    border-bottom-color: var(--branco-base);
 }

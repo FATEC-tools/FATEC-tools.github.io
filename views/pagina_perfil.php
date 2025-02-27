@@ -40,49 +40,72 @@
 
         <div class="container flex-center flex-column">
 
-            <form class="form-perfil" action="" method="post" enctype="multipart/form-data">
+            <div class="form-perfil flex-center flex-column">
 
                 <h2>Perfil Usuario</h2>
-                <br>
 
-                <label for="nome_usuario">Usuário</label>
-                <input type="text" name="nome_usuario" id="nome_usuario" <?php echo "value='{$usuario->nome_usuario}'" ?> readonly><br>
+                <div class="area-foto-dados flex-center container">
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" <?php echo "value='{$usuario->email}'" ?> readonly><br>
+                    <div class="foto-perfil-nome flex-column flex-center">
 
-                <div class="flex-lado-a-lado">
+                        <img src="">
 
-                    <div class="flex-column container-left">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" readonly><br>
+                        <h2>
+                            <?php echo "{$usuario->nome_usuario}" ?>
+                        </h2>
+
                     </div>
 
-                    <div class="flex-column container-right">
+                    <form class="form-editar-perfil" action="" method="post" enctype="multipart/form-data">
+
+                        <label for="nome_usuario">Usuário</label>
+                        <input type="text" name="nome_usuario" id="nome_usuario" <?php echo "value='{$usuario->nome_usuario}'" ?> readonly><br>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" <?php echo "value='{$usuario->email}'" ?>
+                            readonly><br>
+
                         <label for="nivelUsuario">Nivel Usuario</label>
                         <input type="text" name="nivelUsuario" id="nivelUsuario" <?php echo "value='{$usuario->nivel_usuario}'" ?>readonly><br>
-                    </div>
+
+                        <label for="senha">Senha</label>
+
+                        <input type="password" name="senha" id="senha" readonly><br>
+
+
+
+
+                        <button type="button" class="btn btn-vermelho" id="editarBtn">Editar Perfil</button>
+                        <button type="button" class="btn btn-vermelho" id="salvarBtn" style="display: none;">Salvar
+                            Alterações</button>
+
+                    </form>
+
                 </div>
 
-
-                <button type="button" class="btn btn-vermelho" id="editarBtn">Editar Perfil</button>
-                <button type="button" class="btn btn-vermelho" id="salvarBtn" style="display: none;">Salvar
-                    Alterações</button>
-
-            </form>
+            </div>
 
             <?php
             if ($_SESSION["nivel_usuario"] == 'Admin' || $_SESSION["nivel_usuario"] == 'Professor') {
                 ?>
-                <div class="flex-center container-acoes">
-                    <a href="/fatec-tools/listar-ferramentas" class="btn btn-vermelho">Listar Ferramentas</a>
-                    <a href="/fatec-tools/cadastrar-ferramenta" class="btn btn-vermelho">Cadastrar Ferramenta</a>
-                    <?php if ($_SESSION["nivel_usuario"] == 'Admin') { ?>
-                        <a href="/fatec-tools/listar-usuarios" class="btn btn-vermelho">Listar Usuarios</a>
-                    <?php } ?>
-                </div>
-            <?php } ?>
 
+                <div class="flex-center container-acoes">
+
+                    <a href="/fatec-tools/listar-ferramentas"><button class="btn btn-vermelho">Listar
+                            Ferramentas</button></a>
+                    <a href="/fatec-tools/cadastrar-ferramenta"><button class="btn btn-vermelho">Cadastrar
+                            Ferramenta</button></a>
+
+                    <?php if ($_SESSION["nivel_usuario"] == 'Admin') { ?>
+
+                        <a href="/fatec-tools/listar-usuarios"><button class="btn btn-vermelho">Listar
+                                Usuarios</button></a>
+
+                    <?php } ?>
+
+                </div>
+
+            <?php } ?>
 
         </div>
 

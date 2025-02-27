@@ -81,18 +81,19 @@
             <h2>Aplicativos Relevantes</h2>
             <div class="app-relevante flex-lado-quebra">
 
-                <?php 
+                <?php
                 foreach ($retorno as $dado) {
-                    ?>
+                    if ($dado->situacao == "Ativa") { ?>
 
-                    <div class="btn-app">
-                        <a href="<?php echo "/fatec-tools/pagina-aplicativo?id={$dado->id_ferramenta}"; ?>"><img
-                                src="img/ICONES_APP/<?php echo "{$dado->logoFerramenta}"; ?>" alt="imagem do site ou app">
-                            <h3><?php echo "{$dado->nome}"; ?></h3>
-                        </a>
-                    </div>
+                        <div class="btn-app">
+                            <a href="<?php echo "/fatec-tools/pagina-aplicativo?id={$dado->id_ferramenta}"; ?>"><img
+                                    src="img/ICONES_APP/<?php echo "{$dado->logoFerramenta}"; ?>" alt="imagem do site ou app">
+                                <h3><?php echo "{$dado->nome}"; ?></h3>
+                            </a>
+                        </div>
 
-                    <?php
+                        <?php
+                    }
                 }
                 ?>
 

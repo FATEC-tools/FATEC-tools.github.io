@@ -476,9 +476,9 @@ h2 {
         flex-direction: column-reverse;
     }
 
-    /* #cor {
-        height: 100%;
-        width: 100%;
-    } */
-
+    #iframe{
+        width: 360px;
+        height: 198px;
+    }
+    
 }
